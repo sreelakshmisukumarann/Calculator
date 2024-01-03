@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./calstyle.css">
+
+    <!-- <style>
+        
+        #text{
+            width: 100%;
+            text-align: right;
+        }
+        body{
+            background-color: #3a4244;
+        }
+        table tr,tbody{
+            border: black solid;
+        }
+
+        
+    </style> -->
+
+</head>
+<body>
+    
+        <h2 class="mt-5 text-center text-light">Calculator</h2>
+                  
+        
+     <div class="container">
+          <div class="row">
+            <div class="col-4"></div>
+    
+            <div class="col-4">
+                <table class="table table-bordered mt-5 border-3 table-dark border" id="size">
+                    <tbody>
+                      <tr>
+                        <th colspan="3"><input id="result" type="text" class="text" placeholder="0" readonly></th> <!--readonly - give this we can not typing the input box-->
+                        <th class="text-center "><button class="btn btn-dark text-danger" onclick="clearALL()">AC</button></th>
+                      </tr>
+                    
+                    
+                      <tr>
+                        <td  class="text-center"><button class="btn btn-dark" onclick="display('7')">7</button></td>
+                        <td  class="text-center"><button class="btn btn-dark" onclick="display('8')">8</button></td>
+                        <td  class="text-center"><button class="btn btn-dark" onclick="display('9')">9</button></td>
+                        <td  class="text-center "><button class="btn   btn-dark text-warning" onclick="display('/')">÷</button></td>
+                      </tr>
+                      <tr>
+                          <td  class="text-center"><button class="btn btn-dark" onclick="display('4')">4</button></td>
+                          <td  class="text-center"><button class="btn btn-dark" onclick="display('5')">5</button></td>
+                          <td  class="text-center"><button class="btn btn-dark" onclick="display('6')">6</button></td>
+                          <td  class="text-center "><button class="btn btn-dark text-warning" onclick="display('*')">x</button></td>
+                      </tr>
+                      <tr>
+                          <td  class="text-center"><button class="btn btn-dark" onclick="display('1')">1</button></td>
+                          <td  class="text-center"><button class="btn btn-dark" onclick="display('2')">2</button></td>
+                          <td  class="text-center"><button class="btn btn-dark" onclick="display('3')">3</button></td>
+                          <td  class="text-center "><button class="btn btn-dark text-warning" onclick="display('-')">-</button></td>
+                      </tr>
+          
+                      <tr>
+                          <td  class="text-center"><button class="btn btn-dark" onclick="display('0')">0</button></td>
+                          <td  class="text-center"><button class="btn btn-dark" onclick="display('.')">.</button></td>
+                          <td  class="text-center "><button class="btn btn-dark text-warning" onclick="equal()">=</button></td>
+                          <td  class="text-center "><button class="btn btn-dark text-warning" onclick="display('+')">+</button></td>
+                        </tr>
+          
+                        <tr>
+                          <td  class="text-center"><button class="btn btn-dark" onclick="back()">⌫</button></td>
+                          <td colspan="3"></td>
+                          
+                        </tr>
+                    </tbody>
+            </div>
+    
+            <div class="col-4"></div>
+          </div>
+     </div>
+</body>
+
+<script src="./cal.js"></script>
+
+</html>

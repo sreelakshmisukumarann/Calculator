@@ -1,0 +1,10 @@
+.text{
+    width: 100%;
+    text-align: right;
+}
+body{
+    background-color: #3a4244;
+}
+table tr,tbody{
+    border: black solid;
+}
